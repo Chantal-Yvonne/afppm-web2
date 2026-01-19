@@ -31,6 +31,7 @@ $('.slider').slick({
   arrows: false,
   dots: false,
   infinite: true,
+  
 
   responsive: [
     {
@@ -44,7 +45,8 @@ $('.slider').slick({
       breakpoint: 640, // mobile
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        
       }
     }
   ]
