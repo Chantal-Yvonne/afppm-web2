@@ -388,6 +388,9 @@
   .h-\[350px\] {
     height: 350px;
   }
+  .h-\[vh\] {
+    height: vh;
+  }
   .h-auto {
     height: auto;
   }
