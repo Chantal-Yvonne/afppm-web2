@@ -28,7 +28,7 @@
      SLICK SLIDER
 ====================== */
 .service .slick-track {
-  height: 550px;
+  height: 480px;
 }
 /* 
 .custom-prev:hover,
@@ -86,7 +86,7 @@
      font-size: 1.5rem; 
     } 
      .service .slick-track { 
-      height: 650px; 
+      height: 550px; 
      } }
 
 
@@ -100,6 +100,6 @@
 }
 
 .service .slick-track {
-  height: 650px;
+  height: 550px;
 }
  }
