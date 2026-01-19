@@ -359,6 +359,12 @@
   .h-24 {
     height: calc(var(--spacing) * 24);
   }
+  .h-\[85vh\] {
+    height: 85vh;
+  }
+  .h-\[88vh\] {
+    height: 88vh;
+  }
   .h-\[90vh\] {
     height: 90vh;
   }
@@ -367,6 +373,9 @@
   }
   .h-\[250px\] {
     height: 250px;
+  }
+  .h-\[vh\] {
+    height: vh;
   }
   .h-auto {
     height: auto;
