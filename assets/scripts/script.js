@@ -1,0 +1,98 @@
+// NAVIGATION
+  let btn = document.getElementById('hamburgerBtn');
+  let menu = document.getElementById('mobileMenu');
+  const closeBtn = document.getElementById('closeBtn');
+
+  btn.addEventListener('click', function () {
+    menu.classList.toggle('hidden');
+    navbar.classList.toggle('menu-open');
+    
+  });
+
+  // Close menu 
+  document.getElementById("closeMenu").addEventListener("click", () => { 
+    document.getElementById("mobileMenu").classList.add("hidden"); 
+  });
+  
+
+  // Close menu when any link is clicked
+  let menuLinks = menu.querySelectorAll('a');
+  for (var i = 0; i < menuLinks.length; i++) {
+    menuLinks[i].addEventListener('click', function () {
+      menu.classList.add('hidden');
+    });
+  }
+
+  // Sliders
+  
+$('.slider').slick({
+  slidesToShow: 3,       // 3 slides per row
+  slidesToScroll: 1,
+  arrows: false,
+  dots: false,
+  infinite: true,
+
+  responsive: [
+    {
+      breakpoint: 1024, // tablets
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 640, // mobile
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
+
+
+  $('.custom-prev').click(function() {
+    $('.slider').slick('slickPrev');
+  });
+  
+  $('.custom-next').click(function() {
+    $('.slider').slick('slickNext');
+  });
+
+  $('.slider').on('afterChange', function(event, slick, currentSlide){
+  if (currentSlide > 0) {
+    $('.custom-prev').fadeIn();   // show when not on the first slide
+  } else {
+    $('.custom-prev').fadeOut();  // hide again when back at the first slide
+  }
+});
+
+
+  //TESTIMONIAL SLIDER
+$(document).ready(function(){
+  $('.testimonial-cards').slick({
+    arrows: false, // hide default arrows
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots:false,
+    autoplay: true,
+    autoplaySpeed: 2300,
+  });
+
+});
+
+// ========== FAQ ACCORDION ==========
+  
+$(".faq-title").click(function () {
+  $(this).parent().toggleClass("open");
+});
+
+
+// VIDEO
+document.addEventListener('DOMContentLoaded', function () {
+  var video = document.querySelector('video');
+
+  if (video) {
+    video.load();
+  }
+});

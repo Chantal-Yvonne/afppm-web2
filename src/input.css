@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "Baskerville";
+  src: url("../assets/fonts/Baskervville-VariableFont.ttf")    
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("../assets/fonts/Geist-VariableFont.ttf")  
+} 
+
+
+@import "tailwindcss";
+
+@theme { 
+    --font-custom1: "Baskerville", sans-serif; 
+    --font-custom2: "Geist", serif; 
+
+    /* Custom colors */
+    --color-offwhite:#EFECE7; 
+    --color-gold: #E2AE7E; 
+    --color-deep-navy: #081E26;
+
+
+}
+
+
+/*====================
+     SLICK SLIDER
+====================== */
+.service .slick-track {
+  height: 550px;
+}
+/* 
+.custom-prev:hover,
+.custom-next:hover {
+  background-color: #c19b5c;
+} */
+
+
+
+/* FAQ */
+/* hide content by default */
+.accordion-content {
+  display: none;
+}
+
+/* spacing so items are always visible */
+.faq-item {
+  margin-bottom: 1.5rem;
+}
+
+/* icon */
+.faq-title::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #c19b5c;
+}
+
+/* active icon */
+.faq-item.open .faq-title::after {
+  content: "-";
+  font-size: 1.2rem;
+
+}
+
+
+.faq-item.open .accordion-content {
+  display: block;
+  border-bottom: 1px solid #c19b5c;
+}
+
+/* remove double border when open */
+.faq-item.open .faq-title {
+  border-bottom: none;
+}
+
+
+@media (min-width: 768px) { 
+  .faq-title::after { font-size: 1.5rem; 
+  }
+   .faq-item.open .faq-title::after {
+     font-size: 1.5rem; 
+    } 
+     .service .slick-track { 
+      height: 650px; 
+     } }
+
+
+/*  Desktop breakpoint: make icons bigger */
+ @media (min-width: 1024px) { 
+  .faq-title::after { 
+    font-size: 2rem; /* larger plus icon */ 
+  } 
+  .faq-item.open .faq-title::after { 
+    font-size: 2rem; /* larger minus icon */ 
+}
+
+.service .slick-track {
+  height: 650px;
+}
+ }
