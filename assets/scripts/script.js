@@ -37,8 +37,8 @@ $('.slider').slick({
     {
       breakpoint: 1024, // tablets
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3
+        slidesToShow: 2,
+        slidesToScroll: 2
       }
     },
     {
