@@ -27,7 +27,7 @@
   
 $('.slider').slick({
   slidesToShow: 3,       // 3 slides per row
-  slidesToScroll: 1,
+  slidesToScroll: 3,
   arrows: false,
   dots: false,
   infinite: true,
@@ -37,8 +37,8 @@ $('.slider').slick({
     {
       breakpoint: 1024, // tablets
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1
+        slidesToShow: 3,
+        slidesToScroll: 3
       }
     },
     {

@@ -27,9 +27,9 @@
 /*====================
      SLICK SLIDER
 ====================== */
-.service .slick-track {
-  height: 520px;
-}
+/* .service .slick-track {
+  height: 540px;
+} */
 /* 
 .custom-prev:hover,
 .custom-next:hover {
@@ -85,9 +85,10 @@
    .faq-item.open .faq-title::after {
      font-size: 1.5rem; 
     } 
-     .service .slick-track { 
-      height: 550px; 
-     } }
+     /* .service .slick-track { 
+      height: 620px; 
+     }  */
+    }
 
 
 /*  Desktop breakpoint: make icons bigger */
@@ -98,8 +99,10 @@
   .faq-item.open .faq-title::after { 
     font-size: 2rem; /* larger minus icon */ 
 }
-
+/* 
 .service .slick-track {
-  height: 550px;
-}
+  height: 580px;
+} */
+
+
  }
