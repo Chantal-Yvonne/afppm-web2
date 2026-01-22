@@ -23,7 +23,10 @@
 
 }
 
-
+.circle {
+  position: absolute;
+  bottom: -550px;
+}
 
 /*====================
      SLICK SLIDER

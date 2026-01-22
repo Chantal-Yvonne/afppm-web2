@@ -98,3 +98,19 @@ document.addEventListener('DOMContentLoaded', function () {
     video.load();
   }
 });
+
+// Back to top btn
+const backToTop = document.getElementById("backToTop");
+const footer = document.querySelector("footer");
+
+window.addEventListener("scroll", function() {
+  if (window.scrollY + window.innerHeight >= footer.offsetTop) {
+    backToTop.classList.remove("hidden");
+  } else {
+    backToTop.classList.add("hidden");
+  }
+});
+
+backToTop.addEventListener("click", function() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
