@@ -614,6 +614,12 @@
   .bg-\[url\(\'assets\\images\\team-work\.jpg\'\)\] {
     background-image: url('assets\images\team-work.jpg');
   }
+  .bg-\[url\(\.\.\/\/assets\/images\/about-pic\.jpg\)\] {
+    background-image: url(..//assets/images/about-pic.jpg);
+  }
+  .bg-\[url\(\.\.\/assets\/images\/about-pic\.jpg\)\] {
+    background-image: url(../assets/images/about-pic.jpg);
+  }
   .bg-\[url\(\/assets\/images\/about-pic\.jpg\)\] {
     background-image: url(/assets/images/about-pic.jpg);
   }
