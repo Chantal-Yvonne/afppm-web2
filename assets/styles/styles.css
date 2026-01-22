@@ -533,6 +533,15 @@
     }
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
+  .bg-\[url\(\'\.\.\/assets\/images\/about-pic\.jpg\'\)\] {
+    background-image: url('../assets/images/about-pic.jpg');
+  }
+  .bg-\[url\(\'\.\.\/images\/about-pic\.jpg\'\)\] {
+    background-image: url('../images/about-pic.jpg');
+  }
+  .bg-\[url\(\'\/assets\/images\/about-pic\.jpg\'\)\] {
+    background-image: url('/assets/images/about-pic.jpg');
+  }
   .bg-\[url\(\.\.\/\/assets\/images\/about-pic\.jpg\)\] {
     background-image: url(..//assets/images/about-pic.jpg);
   }
@@ -581,6 +590,9 @@
   }
   .bg-cover {
     background-size: cover;
+  }
+  .bg-center {
+    background-position: center;
   }
   .bg-no-repeat {
     background-repeat: no-repeat;
@@ -759,6 +771,10 @@
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .contrast-110 {
+    --tw-contrast: contrast(110%);
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .contrast-\[110\%\] {
     --tw-contrast: contrast(110%);
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
