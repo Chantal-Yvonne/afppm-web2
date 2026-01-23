@@ -70,19 +70,6 @@ $('.slider').slick({
 });
 
 
-  //TESTIMONIAL SLIDER
-$(document).ready(function(){
-  $('.testimonial-cards').slick({
-    arrows: false, // hide default arrows
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    dots:false,
-    autoplay: true,
-    autoplaySpeed: 2300,
-  });
-
-});
-
 // ========== FAQ ACCORDION ==========
   
 $(".faq-title").click(function () {
