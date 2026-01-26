@@ -31,6 +31,8 @@ $('.slider').slick({
   arrows: false,
   dots: false,
   infinite: true,
+  autoplay:true,
+  autoplaySpeed: 2500,
   
 
   responsive: [
@@ -57,17 +59,17 @@ $('.slider').slick({
     $('.slider').slick('slickPrev');
   });
   
-  $('.custom-next').click(function() {
-    $('.slider').slick('slickNext');
-  });
+//   $('.custom-next').click(function() {
+//     $('.slider').slick('slickNext');
+//   });
 
-  $('.slider').on('afterChange', function(event, slick, currentSlide){
-  if (currentSlide > 0) {
-    $('.custom-prev').fadeIn();   // show when not on the first slide
-  } else {
-    $('.custom-prev').fadeOut();  // hide again when back at the first slide
-  }
-});
+//   $('.slider').on('afterChange', function(event, slick, currentSlide){
+//   if (currentSlide > 0) {
+//     $('.custom-prev').fadeIn();   // show when not on the first slide
+//   } else {
+//     $('.custom-prev').fadeOut();  // hide again when back at the first slide
+//   }
+// });
 
 
 // ========== FAQ ACCORDION ==========
