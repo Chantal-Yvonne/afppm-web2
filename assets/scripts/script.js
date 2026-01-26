@@ -55,13 +55,13 @@ $('.slider').slick({
 });
 
 
-  $('.custom-prev').click(function() {
-    $('.slider').slick('slickPrev');
-  });
+  // $('.custom-prev').click(function() {
+  //   $('.slider').slick('slickPrev');
+  // });
   
-//   $('.custom-next').click(function() {
-//     $('.slider').slick('slickNext');
-//   });
+  $('.custom-next').click(function() {
+    $('.slider').slick('slickNext');
+  });
 
 //   $('.slider').on('afterChange', function(event, slick, currentSlide){
 //   if (currentSlide > 0) {
