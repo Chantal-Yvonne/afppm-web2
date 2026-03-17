@@ -23,11 +23,20 @@
 
 }
 
+.projects a:hover {
+  text-decoration: underline solid #E2AE7E;
+  text-underline-offset: 5px;
+}
+
 .circle {
   position: absolute;
   bottom: -550px;
 }
 
+/* .cgsa-images img {
+  max-width: 40%;
+  height: 300px;
+} */
 /*====================
      SLICK SLIDER
 ====================== */
