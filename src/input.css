@@ -33,10 +33,10 @@
   bottom: -550px;
 }
 
-/* .cgsa-images img {
-  max-width: 40%;
-  height: 300px;
-} */
+.section-one {
+  height: 85vh;
+}
+
 /*====================
      SLICK SLIDER
 ====================== */
@@ -166,5 +166,7 @@
   height: 580px;
 } */
 
-
+.section-one {
+  height: 100vh;
+}
  }
