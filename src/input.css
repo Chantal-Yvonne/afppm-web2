@@ -23,6 +23,9 @@
 
 }
 
+.team-btn:hover {
+  color: green;
+}
 .projects a:hover {
   text-decoration: underline solid #E2AE7E;
   text-underline-offset: 5px;
